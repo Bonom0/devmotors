@@ -48,7 +48,9 @@ export default async function Page({ params: { slug } }: {
               alt={objects[0].title}
               quality={100}
               fill={true}
+              priority={true}
               src={objects[0].metadata.banner.url}
+              sizes='(max-width: 480px) 100vw, (max-width: 1024px) 75vw, 60vw'
             />
           </div>
 

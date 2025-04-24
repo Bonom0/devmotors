@@ -70,7 +70,7 @@
 
 //Service Area
 
-.serviceTitle{
+.servicesTitle{
   text-transform: uppercase;
   color: #121212;
   margin: 40px 0 24px 0;
@@ -90,8 +90,6 @@
   font-size: 18px;
   transition: all 0.4s;
 }
-
-
 
 .innerService{
   position: relative;
@@ -116,5 +114,26 @@
 
   + p{
     font-weight: bold;
+  }
+}
+
+//Responsividade
+
+@media (min-width: 640px){
+  .services{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .innerService{
+    width: 280px;
+    height: 200px;
+  }
+
+  .servicesTitle{
+    margin-top: 54px;
+    font-size: 30px;
   }
 }
